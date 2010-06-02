@@ -1,0 +1,203 @@
+#!/bin/bash
+#   My bash prompt.
+#   web  : http://www.binaryelysium.com
+#   mail : unnamedrambler@gmail.com
+#
+#   -----------------------------------------------------------------------------
+#   This prompt based off of the lycos prompt v1.08d from
+#   http://lycos.homelinux.org/ and http://rannis.free.fr/tmp/global/download.php
+#   The original author's email is rannis@free.fr
+#   -----------------------------------------------------------------------------
+#
+#   to use it just put this line in your $HOME/.bashrc 
+# PCOLOR is the overall theme color, choose frmo the colors listed below
+#   ---------cut here--------
+#   export PCOLOR='\e[0;32m' 
+#   [ -f /path/to/prompt.bash ] && source /path/to/prompt.bash
+#   ---------cut here--------
+#   
+## Last update Wed Jun  2 16:09:40 CDT 2010
+
+# Define some colors
+# from Archlinux wiki
+# http://wiki.archlinux.org/index.php/Color_Bash_Prompt
+txtblk='\e[0;30m' # Black - Regular
+txtred='\e[0;31m' # Red
+txtgrn='\e[0;32m' # Green
+txtylw='\e[0;33m' # Yellow
+txtblu='\e[0;34m' # Blue
+txtpur='\e[0;35m' # Purple
+txtcyn='\e[0;36m' # Cyan
+txtwht='\e[0;37m' # White
+bldblk='\e[1;30m' # Black - Bold
+bldred='\e[1;31m' # Red
+bldgrn='\e[1;32m' # Green
+bldylw='\e[1;33m' # Yellow
+bldblu='\e[1;34m' # Blue
+bldpur='\e[1;35m' # Purple
+bldcyn='\e[1;36m' # Cyan
+bldwht='\e[1;37m' # White
+unkblk='\e[4;30m' # Black - Underline
+undred='\e[4;31m' # Red
+undgrn='\e[4;32m' # Green
+undylw='\e[4;33m' # Yellow
+undblu='\e[4;34m' # Blue
+undpur='\e[4;35m' # Purple
+undcyn='\e[4;36m' # Cyan
+undwht='\e[4;37m' # White
+bakblk='\e[40m'   # Black - Background
+bakred='\e[41m'   # Red
+badgrn='\e[42m'   # Green
+bakylw='\e[43m'   # Yellow
+bakblu='\e[44m'   # Blue
+bakpur='\e[45m'   # Purple
+bakcyn='\e[46m'   # Cyan
+bakwht='\e[47m'   # White
+txtrst='\e[0m'    # Text Reset
+
+# Takes one parameter: an integer.
+# This is designed to be a percentage bar so the parameter must be <= 100
+# or the output won't be meaningful.
+# Casey
+function make_bar
+{
+    length=5 # change this   
+    delim="#" # and this if you please
+
+    # Don't change any of this
+    STAT_BAR=""
+    ((lim=(($length * 10) * $1) / 1000 ))
+    for ((i=0;i<lim;i+=1)); do
+        STAT_BAR="${STAT_BAR}$delim"
+    done
+    while [ ${#STAT_BAR} -ne $length ]
+    do
+        STAT_BAR+=" "
+    done
+    echo "$STAT_BAR"
+} 
+
+# from RailsTips by John
+# http://railstips.org/blog/archives/2009/02/02/bedazzle-your-bash-prompt-with-git-info/
+function parse_git_branch {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo "${ref#refs/heads/}"
+}
+# This function takes `pwd` and shortens it to something respectable.
+# From meowsqueak on the Gentoo forums
+function shorten_pwd
+{
+    # change this to suit your taste
+    pwd_length=20
+    DIR=`pwd`
+
+    echo $DIR | /bin/grep "^$HOME" >> /dev/null
+
+    if [ $? -eq 0 ]
+    then
+        CURRDIR=`echo $DIR | awk -F$HOME '{print $2}'`
+        newPWD="~$CURRDIR"
+
+    if [ $(echo -n $newPWD | wc -c | tr -d " ") -gt $pwd_length ]
+    then
+        newPWD="~/..$(echo -n $PWD | sed -e "s/.*\(.\{$pwd_length\}\)/\1/")"
+    fi
+    elif [ "$DIR" = "$HOME" ]
+    then
+        newPWD="~"
+    elif [ $(echo -n $PWD | wc -c | tr -d " ") -gt $pwd_length ]
+    then
+        newPWD="..$(echo -n $PWD | sed -e "s/.*\(.\{$pwd_length\}\)/\1/")"
+    else
+        newPWD="$(echo -n $PWD)"
+    fi 
+}
+
+hostnam=$(hostname)
+unset temp
+unset git_branch
+function prompt_command 
+{
+local EXIT_CODE=$?  # Getting last command exit code.
+TERMWIDTH=${COLUMNS}  # Getting Term width.
+
+usernam=$(whoami)
+git_branch=$(parse_git_branch)
+if [ -n "$git_branch" ]; then
+  git_branch_full="[ $git_branch ]="
+fi
+# echo $git_branch
+local temp="[ $usernam@$hostnam ]=[ bg : $JOBS ]=$git_branch_full----=[ $(date +%D) $(date +%T) ]"
+# Getting size of unused terminal space :) ==> for filling with $fill characters.
+let fillsize=${TERMWIDTH}-${#temp}-1
+fill=""
+while [ "$fillsize" -gt "0" ] 
+do 
+   fill="${fill} "
+   let fillsize=${fillsize}-1
+done
+
+shorten_pwd
+# Make the Prompt!
+make_prompt
+}
+
+function make_prompt
+{
+local PATH_COLOR=$txtrst
+local ACPITOOL_PATH="/usr/bin/acpitool"
+local JOBS="$(jobs | wc -l | awk '{ print $1 }')"   # Getting current nb of background jobs.
+
+# Detecting superuser with visible color :)
+if [ $usernam != "root" ]
+then 
+    usernam="$txtwht$usernam"
+else
+    usernam="$bldred$usernam"
+fi
+if [ -n "$git_branch" ]; then
+  git_branch="$PCOLOR[ $txtwht$git_branch $PCOLOR]="
+fi
+# Add a bold red number for exitcode if its nonzero
+if [ $EXIT_CODE -ne 0 ]
+then
+    EXIT_STR="$bldred$EXIT_CODE"
+else
+    EXIT_STR="$bldwht$EXIT_CODE"
+fi
+
+if [ -f $ACPITOOL_PATH ]
+then
+    STATE=`acpitool | grep "Battery #1" | awk {'print $4}'`
+   if [ $STATE = "discharging," ]
+   then
+       local POWER_PER="$PCOLOR[$bldred`make_bar $(acpitool | grep "Battery #1" | awk {'print $5}' | cut -d '.' -f1)`$PCOLOR]"   # Discharging power
+    else
+       local POWER_PER="$PCOLOR[$txtgrn`make_bar $(acpitool | grep "Battery #1" | awk {'print $5}' | cut -d '.' -f1)`$PCOLOR]" # Charging
+    fi
+else
+    local POWER_PER=""
+fi
+
+# Directory color path.
+if [ -O "$PWD" ]
+    then
+    PATH_COLOR=$txtwht #if owner.
+elif [ -w "$PWD" ]
+    then
+    PATH_COLOR=$PCOLOR #if write permission.
+else
+    PATH_COLOR=$bldred #if denied for write.
+fi
+
+PS1="$PCOLOR[ $usernam$PCOLOR@$txtwht$hostnam $PCOLOR]$PCOLOR=[$txtwht bg :$bldwht $JOBS $PCOLOR]=$git_branch--${fill}$PCOLOR--=[$txtwht $(date +%D) $(date +%T) $PCOLOR]\n\
+$PCOLOR[$txtwht $PATH_COLOR$newPWD $PCOLOR]-[$EXIT_STR$PCOLOR]:$bldwht "
+
+PS2="$NO_COLOR>"
+PS3="$NO_COLOR>"
+PS4="$NO_COLOR>"
+}
+
+PROMPT_COMMAND=prompt_command
+
+
