@@ -1,0 +1,5 @@
+#  put local settings here
+
+
+# prompt color
+export PCOLOR='\e[0;32m'

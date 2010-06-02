@@ -127,5 +127,9 @@ alias z="sudo zypper"
 alias amarokup="git checkout master && git remote update && git rebase amarok/master && git pull amarok master"
 alias fanhi="sudo bash -c \"echo level full-speed > /proc/acpi/ibm/fan\""
 
-
+###############################################################################
+# source local settings
+if [ -f $HOME/.bashrc.local ] ; then
+    source $HOME/.bashrc.local
+fi
  
