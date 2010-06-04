@@ -17,6 +17,7 @@ shopt -s nocaseglob
 export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
+export LESS="-erX"  # so less displays ANSI colors  correctly
 
 ###############################################################################
 # PATH stuff
