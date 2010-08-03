@@ -109,6 +109,7 @@ alias mi="make && make install"
 alias gs="git status"
 alias gap="git add --patch"
 alias gpo="git push origin master"
+alias g="git"
 
 ###############################################################################
 # archlinux aliases
