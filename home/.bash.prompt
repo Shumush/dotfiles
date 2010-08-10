@@ -17,6 +17,7 @@
 #   ---------cut here--------
 #   
 ## Last update Wed Jun  2 16:09:40 CDT 2010
+export GIT_PS1_SHOWDIRTYSTATE=1
 
 # Define some colors
 # from Archlinux wiki
@@ -76,13 +77,85 @@ function make_bar
     done
     echo "$STAT_BAR"
 } 
+git_ps1_colored () {
+  local g="$(__gitdir)"
+  if [ -n "$g" ]; then
+    local r
+    local b
+    if [ -f "$g/rebase-merge/interactive" ]; then
+      r="|REBASE-i"
+      b="$(cat "$g/rebase-merge/head-name")"
+    elif [ -d "$g/rebase-merge" ]; then
+      r="|REBASE-m"
+      b="$(cat "$g/rebase-merge/head-name")"
+    else
+      if [ -d "$g/rebase-apply" ]; then
+        if [ -f "$g/rebase-apply/rebasing" ]; then
+          r="|REBASE"
+        elif [ -f "$g/rebase-apply/applying" ]; then
+          r="|AM"
+        else
+          r="|AM/REBASE"
+        fi
+      elif [ -f "$g/MERGE_HEAD" ]; then
+        r="|MERGING"
+      elif [ -f "$g/BISECT_LOG" ]; then
+        r="|BISECTING"
+      fi
 
-# from RailsTips by John
-# http://railstips.org/blog/archives/2009/02/02/bedazzle-your-bash-prompt-with-git-info/
-function parse_git_branch {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  echo "${ref#refs/heads/}"
+      b="$(git symbolic-ref HEAD 2>/dev/null)" || {
+
+        b="$(
+        case "${GIT_PS1_DESCRIBE_STYLE-}" in
+        (contains)
+          git describe --contains HEAD ;;
+        (branch)
+          git describe --contains --all HEAD ;;
+        (describe)
+          git describe HEAD ;;
+        (* | default)
+          git describe --exact-match HEAD ;;
+        esac 2>/dev/null)" ||
+
+        b="$(cut -c1-7 "$g/HEAD" 2>/dev/null)..." ||
+        b="unknown"
+        b="($b)"
+      }
+    fi
+
+    local i
+    local s
+    local u
+    local c
+    local w=$txtgrn
+
+    if [ "true" = "$(git rev-parse --is-inside-git-dir 2>/dev/null)" ]; then
+      if [ "true" = "$(git rev-parse --is-bare-repository 2>/dev/null)" ]; then
+        c="BARE:"
+      else
+        b="GIT_DIR!"
+      fi
+    elif [ "true" = "$(git rev-parse --is-inside-work-tree 2>/dev/null)" ]; then
+      if [ -n "${GIT_PS1_SHOWDIRTYSTATE-}" ]; then
+        if [ "$(git config --bool bash.showDirtyState)" != "false" ]; then
+          git diff --no-ext-diff --quiet --exit-code || w=$txtylw
+          if git rev-parse --quiet --verify HEAD >/dev/null; then
+            git diff-index --cached --quiet HEAD -- || i="+"
+          else
+            i="#"
+          fi
+        fi
+      fi
+    fi
+
+    #printf "$w${1:- (%s)}" "$c${b##refs/heads/}${i:+ $i}$r"
+    git_ps1_color=$w
+    git_ps1_string=" ($c${b##refs/heads/}${i:+ $i}$r)"
+  else
+    git_ps1_string=""
+  fi
 }
+
 # This function takes `pwd` and shortens it to something respectable.
 # From meowsqueak on the Gentoo forums
 function shorten_pwd
@@ -115,27 +188,21 @@ function shorten_pwd
 
 hostnam=$(hostname)
 unset temp
-unset git_branch
 function prompt_command 
 {
 local EXIT_CODE=$?  # Getting last command exit code.
 TERMWIDTH=${COLUMNS}  # Getting Term width.
 
 usernam=$(whoami)
-git_branch=$(parse_git_branch)
-if [ -n "$git_branch" ]; then
-  git_branch_full="[ $git_branch ]="
-fi
-# echo $git_branch
-local temp="[ $usernam@$hostnam ]=[ bg : $JOBS ]=$git_branch_full----=[ $(date +%D) $(date +%T) ]"
+#local temp="[ $usernam@$hostnam ]=[ bg : $JOBS ]=$git_branch_full--"
 # Getting size of unused terminal space :) ==> for filling with $fill characters.
-let fillsize=${TERMWIDTH}-${#temp}-1
-fill=""
-while [ "$fillsize" -gt "0" ] 
-do 
-   fill="${fill} "
-   let fillsize=${fillsize}-1
-done
+#let fillsize=${TERMWIDTH}-${#temp}-1
+#fill=""
+#while [ "$fillsize" -gt "0" ] 
+#do 
+#   fill="${fill} "
+#   let fillsize=${fillsize}-1
+#done
 
 shorten_pwd
 # Make the Prompt!
@@ -189,8 +256,8 @@ elif [ -w "$PWD" ]
 else
     PATH_COLOR=$bldred #if denied for write.
 fi
-
-echo -ne "$PCOLOR[ $usernam$PCOLOR@$txtwht$hostnam $PCOLOR]$PCOLOR=[$txtwht bg :$bldwht $JOBS $PCOLOR]=$git_branch--${fill}$PCOLOR--=[$txtwht $(date +%D) $(date +%T) $PCOLOR]"
+git_ps1_colored
+echo -ne "$PCOLOR[ $usernam$PCOLOR@$txtwht$hostnam $PCOLOR]$PCOLOR=[$txtwht bg :$bldwht $JOBS $PCOLOR]=[$git_ps1_color$git_ps1_string $PCOLOR]=--\n"
 
 PS1="\[$PCOLOR\][\[$txtwht\] \[$PATH_COLOR\]$newPWD \[$PCOLOR\]]-[$EXIT_STR\[$PCOLOR\]]:\[$bldwht\] "
 
