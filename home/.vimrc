@@ -1,5 +1,5 @@
 set mouse=
-colorscheme wombat
+colorscheme ir_black
 set ignorecase
 syn on
 " number of space chars inserted for indendation
@@ -8,4 +8,6 @@ set shiftwidth=4
 set expandtab
 " number of chars inserted when tab key pressed
 set tabstop=4
+
+filetype on
 
