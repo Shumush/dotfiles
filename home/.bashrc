@@ -2,6 +2,9 @@ if [ -f /etc/bash_completion ]; then
 	    . /etc/bash_completion
 fi
 
+# this makes it so only one TAB is required to get a list of all options
+set show-all-if-ambiguous on
+
 complete -cf sudo
 
 shopt -s cdspell
