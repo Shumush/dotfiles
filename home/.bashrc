@@ -103,6 +103,7 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias sch="cd $HOME/docs/School"
 alias mi="make && make install"
+alias f="find . -iname"
 
 ###############################################################################
 # git alises
