@@ -83,7 +83,6 @@ fi
 export EDITOR=vim
 #export VISUAL=vim
 alias vi=vim
-setterm -blength 0
 
 
 ###############################################################################
