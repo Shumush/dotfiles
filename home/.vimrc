@@ -57,7 +57,6 @@ nnoremap k gk
 "au FocusLost * :wa
 
 let mapleader = ","
-let maplocalleader = "\\"
 
 " match bracket pairs with tab
 nnoremap <tab> %
