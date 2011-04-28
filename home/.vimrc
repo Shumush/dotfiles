@@ -54,7 +54,7 @@ nnoremap j gj
 nnoremap k gk
 
 "save on loss of focus
-au FocusLost * :wa
+"au FocusLost * :wa
 
 let mapleader = ","
 
