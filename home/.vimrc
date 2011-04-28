@@ -1,6 +1,5 @@
-syntax on
-filetype plugin indent on
-
+let mapleader = ","
+let maplocalleader = ","
 "
 set hidden "This allows vim to put buffers in the bg without saving, and then allows undoes when you fg them again.
 set history=1000 "Longer history
@@ -35,6 +34,11 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
+" Pathogen == teh awesomes
+call pathogen#runtime_append_all_bundles()
+filetype off
+syntax on
+filetype plugin indent on
 
 " remap copy paste
 nmap <C-S-V> "+gP
@@ -56,7 +60,6 @@ nnoremap k gk
 "save on loss of focus
 "au FocusLost * :wa
 
-let mapleader = ","
 
 " match bracket pairs with tab
 nnoremap <tab> %
@@ -151,8 +154,6 @@ augroup golang
   au FileType go set noexpandtab
 augroup END
 
-" Pathogen == teh awesomes
-call pathogen#runtime_append_all_bundles()
 
 " Ack >> grep
 nnoremap <leader>a :Ack
