@@ -181,7 +181,7 @@ let classpath = join(
    \ "lib/*", "lib/dev/*",
    \ "bin",
    \ vimfiles."/lib/*",
-   \ $HOME."/.clojure/*.jar"
+   \ $HOME."/.clojure/*"
    \],
    \ sep)
 " Settings for VimClojure
