@@ -36,6 +36,11 @@ set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
 
+" remap copy paste
+nmap <C-S-V> "+gP
+imap <C-S-V> <ESC><C-S-V>i
+vmap <C-S-C> "+y
+
 " disable arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
