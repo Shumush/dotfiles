@@ -57,7 +57,7 @@ set envelope_from                                               # which from?
 set sig_dashes                                                  # dashes before my sig... sweet
 set edit_headers                                                # show headers when composing
 set fast_reply                                                  # skip to compose when replying
-set sendmail_wait       = -1                                    # don't wait for sending... to complete
+set sendmail_wait       = 0                                    # don't wait for sending... to complete
 set askcc                                                       # ask for CC:
 set fcc_attach                                                  # save attachments with the body
 unset mime_forward                                              # forward attachments as part of body
