@@ -87,6 +87,7 @@ if test -f "$envfile" && kill -0 $(grep GPG_AGENT_INFO "$envfile" | cut -d: -f 2
 else
     eval "$(gpg-agent --daemon --write-env-file "$envfile")"
 fi
+export GPG_AGENT_INFO
 
 ###############################################################################
 # vim stuff
