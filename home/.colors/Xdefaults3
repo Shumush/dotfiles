@@ -1,0 +1,53 @@
+! urxvt
+URxvt*background: #101010
+URxvt*foreground: #999993
+URxvt*cursorColor: #395573
+URxvt*borderColor: #101010
+URxvt*colorUL: #31658C
+URxvt*borderless: false
+URxvt*internalBorder: 3
+URxvt*externalBorder: 3
+URxvt*scrollBar: false
+URxvt*geometry: 106x32
+URxvt*font: xft:terminus:pixelsize=12:antialias=false
+URxvt*boldFont: xft:terminus:bold:pixelsize=12:antialias=false
+! transparency
+URxvt*inheritPixmap: true
+!URxvt*transparent: true
+URxvt*tintColor: #101010
+URxvt*shading: 40
+! perl extensions (tabs, clickable URLs, yankable URLs)
+URxvt*perl-ext-common: default,tabbedex,matcher,url-select
+! tabs
+URxvt*tabbed.tabbar-bg: -1
+URxvt*tabbed.tabbar-fg: -2
+URxvt*tabbed.tab-bg: -2
+URxvt*tabbed.tab-fg: -1
+URxvt*tabbed.title-bg: -1
+URxvt*tabbed.title-fg: -2
+URxvt*tabbed.autohide: true
+URxvt*tabbed.new-button: false
+URxvt*tabbed.title: true
+! clickable URLs
+URxvt*matcher.button: 1
+URxvt*urlLauncher: /usr/bin/firefox
+! yankable URLs
+URxvt*underlineURLs: true
+URxvt*keysym.M-u: perl:url-select:select_next
+
+! colors
+!#include "/home/ramblurr/.colors/jasonwryan.colors"
+!#include "/home/ramblurr/.colors/thayer.colors"
+!#include "/home/ramblurr/.colors/necromancer.colors"
+#include "/home/ramblurr/.colors/nu.colors"
+ 
+! fonts
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+
+! cursor
+Xcursor.theme: Vanilla-DMZ-AA
+
