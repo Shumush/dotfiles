@@ -94,7 +94,7 @@ export GPG_AGENT_INFO
 export EDITOR=vim
 #export VISUAL=vim
 alias vi=vim
-alias vimt=vim -c NERDTree
+alias vimt='vim -c NERDTree'
 
 
 ###############################################################################
