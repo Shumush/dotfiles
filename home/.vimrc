@@ -40,6 +40,9 @@ filetype off
 syntax on
 filetype plugin indent on
 
+" legendary efficiency boost
+nnoremap ; :
+
 " remap copy paste
 nmap <C-S-V> "+gP
 imap <C-S-V> <ESC><C-S-V>i
