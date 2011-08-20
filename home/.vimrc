@@ -91,12 +91,6 @@ set background=dark
 colors zenburn
 
 " Random commandline shortcuts
-"
-" latex build + evince ps view
-" This one is weird...what is with the :t:r.tex?
-"nmap ,tex :!(texbuildps.py %:t:r.tex)<CR><CR>
-nmap ,tex :!(texbuildps.py %)<CR><CR>
-
 " Specify filetypes
 au BufNewFile,BufRead *.i set filetype=swig
 
