@@ -84,8 +84,10 @@ map ,tl :TlistToggle<CR>
 let Tlist_Exit_OnlyWindow = 1
 
 " C/C++ stuff
-nnoremap <F4> :A " Switch between header and impl
-nnoremap <C-F4> :AV " Switch (vert split) between header and impl
+" Switch between header and impl
+nnoremap <F4> :A<CR>
+" Switch (vert split) between header and impl
+nnoremap <C-F4> :AV<CR>
 
 
 " Colorscheme bullshittery:
