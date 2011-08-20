@@ -47,6 +47,7 @@ nnoremap ; :
 nmap <C-S-V> "+gP
 imap <C-S-V> <ESC><C-S-V>i
 vmap <C-S-C> "+y
+set pastetoggle=<F2> " F2 toggles paste mode
 
 " disable arrow keys
 nnoremap <up> <nop>
