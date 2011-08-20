@@ -111,13 +111,13 @@ alias ...="cd ../../"
 alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias la='ls -la --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
-alias grep='grep --color=tty -d skip'
+alias grep='grep --color=auto -d skip'
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias sch="cd $HOME/docs/School"
 alias mi="make && make install"
-alias f="find . -iname"
+alias maketags="cd ~/.vim/tags && make"
 
 ###############################################################################
 # git alises
