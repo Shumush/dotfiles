@@ -88,7 +88,7 @@ let Tlist_Exit_OnlyWindow = 1
 set tags=tags;/
 so ~/.vim/tags/tags.vim
 " create tags file for your project (includes local vars)
-nnoremap <C-F12> :!ctags -R --sort=yes --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
+nnoremap <F12> :!ctags -R --sort=yes --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
 so ~/.vim/autotag.vim
 
 " OmniCppComplete
