@@ -83,6 +83,10 @@ nmap ,tu :!(ctags *.[ch])&<CR><CR>
 map ,tl :TlistToggle<CR>
 let Tlist_Exit_OnlyWindow = 1
 
+" C/C++ stuff
+nnoremap <F4> :A " Switch between header and impl
+nnoremap <C-F4> :AV " Switch (vert split) between header and impl
+
 
 " Colorscheme bullshittery:
 " set t_Co=256 " this should be detected by vim automatically if your terminfo
@@ -93,9 +97,6 @@ colors zenburn
 " Random commandline shortcuts
 " Specify filetypes
 au BufNewFile,BufRead *.i set filetype=swig
-
-" For pydiction:
-let g:pydiction_location='~/.vim/pydiction-1.2/complete-dict'
 
 " Gundo settings
 nnoremap <F5> :GundoToggle<CR>
