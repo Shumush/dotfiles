@@ -35,7 +35,7 @@ set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
 " Pathogen == teh awesomes
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 filetype off
 syntax on
 filetype plugin indent on
