@@ -81,7 +81,8 @@ let Tlist_Exit_OnlyWindow = 1
 
 
 " Colorscheme bullshittery:
-set t_Co=16
+" set t_Co=256 " this should be detected by vim automatically if your terminfo
+" is correct
 set background=dark
 colors zenburn
 
