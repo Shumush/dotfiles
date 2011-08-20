@@ -1,7 +1,5 @@
 # Generate tags for system libraries
 #
-# Don't forget to add the tag files to .gitignore
-#
 # Author: Casey Link <unnamedrambler(at)gmail(dot)com>
 
 # version of the cpp stl to generate tags for
