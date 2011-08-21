@@ -120,6 +120,12 @@ set completeopt=menuone,menu,longest,preview
 
 " }}}
 
+" bufkill - buffer killing without window casualties {{
+nnoremap <leader>w :BD<CR>
+nnoremap <S-right> :BB<CR>
+nnoremap <S-left> :BF<CR>
+
+
 "-----------------------------------------------------------
 " Colorscheme bullshittery:
 set background=dark
