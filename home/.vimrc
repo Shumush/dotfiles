@@ -48,6 +48,7 @@ filetype plugin indent on
 
 " legendary efficiency boost
 nnoremap ; :
+nnoremap : <nop>
 nmap j gj
 nmap k gk
 
@@ -57,6 +58,12 @@ nmap <C-S-V> "+gP
 imap <C-S-V> <ESC><C-S-V>i
 vmap <C-S-C> "+y
 set pastetoggle=<F2> " F2 toggles paste mode
+
+" Yank/paste to the OS clipboard with ,y and ,p
+nmap <leader>y "+y
+nmap <leader>Y "+yy
+nmap <leader>p "+p
+nmap <leader>P "+P
 
 " disable arrow keys
 nmap <up> <nop>
