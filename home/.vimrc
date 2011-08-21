@@ -1,35 +1,36 @@
+" For great win!
 let mapleader = ","
 let maplocalleader = ","
 "
 set hidden "This allows vim to put buffers in the bg without saving, and then allows undoes when you fg them again.
-set history=1000 "Longer history
-set number
-set hlsearch
-set autoindent
-set smartindent
-set expandtab
-set wildmenu
-set wildmode=list:longest
+
+set history=1000 "need more history
+set number "what line is that?
+set hlsearch "highlight them searches
+set autoindent "cause i'm too lazy
+set smartindent "smarter is better
+set expandtab "hate tabs
+set wildmenu " improved tab completion
+set wildmode=list:longest " be bash like
 set scrolloff=3 " This keeps three lines of context when scrolling
-set title
-set expandtab
-set smarttab
-set ts=4
+set title " so we know whats open
+set smarttab "smarter is still better
+set ts=4 "sane indent settings
 set sw=4
 set sts=4
-set expandtab
-set encoding=utf-8
-set relativenumber
+set encoding=utf-8 "UTF-8 FOR LIFE
+set relativenumber "much more useful
 set laststatus=2
 set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%c\",getftime(expand(\"%:p\")))}%=\ lin:%l\,%L\ col:%c%V\ pos:%o\ ascii:%b\ %P
-set ignorecase
-set smartcase
-set incsearch
-set showmatch
-set undofile
+set ignorecase "case insens searches
+set smartcase "figures it out!
+set incsearch "incremental search is incremental
+set showmatch "usability++
+set undofile "unlimited undo!
 set backspace=indent,eol,start
 set linespace=3
 
+" wrap settings for great readability
 set wrap
 set textwidth=79
 set formatoptions=qrn1
@@ -66,10 +67,6 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-"save on loss of focus
-"au FocusLost * :wa
-
-
 " match bracket pairs with tab
 nnoremap <tab> %
 vnoremap <tab> %
@@ -88,9 +85,9 @@ nmap ,tu :!(ctags *.[ch])&<CR><CR>
 map ,tl :TlistToggle<CR>
 let Tlist_Exit_OnlyWindow = 1
 
-" Ctags
-" load tags
+" CTAGS - code completion is nice
 set tags=tags;/
+" load specific tags
 so ~/.vim/tags/tags.vim
 " create tags file for your project (includes local vars)
 nnoremap <F12> :!ctags -R --sort=yes --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
@@ -110,7 +107,7 @@ au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 
 
-" C/C++ stuff
+" C/C++ sweetness
 " Switch between header and impl
 nnoremap <F4> :A<CR>
 " Switch (vert split) between header and impl
@@ -121,14 +118,14 @@ nnoremap <C-F4> :AV<CR>
 " set t_Co=256 " this should be detected by vim automatically if your terminfo
 " is correct
 set background=dark
-colors zenburn
+colors molokai
 
 " Random commandline shortcuts
 " Specify filetypes
 au BufNewFile,BufRead *.i set filetype=swig
 
 " Gundo settings
-nnoremap <F5> :GundoToggle<CR>
+"nnoremap <F5> :GundoToggle<CR>
 
 " NERDTree settings
 let g:NERDTreeChDirMode=2
@@ -172,10 +169,12 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 " Make it easier to move around through blocks of text:
-noremap <C-J> gj
-noremap <C-k> gk
 noremap U 30k
 noremap D 30j
+
+" buffer navigation
+map <left> :bprev<CR>
+map <right> :bnext<CR>
 
 " Go specific settings
 augroup golang
