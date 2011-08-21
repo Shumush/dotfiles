@@ -48,7 +48,6 @@ filetype plugin indent on
 
 " legendary efficiency boost
 nnoremap ; :
-nnoremap : <nop>
 nmap j gj
 nmap k gk
 
