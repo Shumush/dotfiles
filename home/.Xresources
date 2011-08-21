@@ -1,0 +1,11 @@
+! Modular Xdefaults
+!------------------
+! color schem
+#include ".colors/vimbrant"
+
+! urxvt settings
+#include ".colors/urxvt"
+
+! local settings - create this file yourself
+#include ".Xresources.local"
+

@@ -1,8 +1,0 @@
-! Modular Xdefaults
-!------------------
-! color schem
-#include "~/.colors/solarized"
-
-! urxvt settings
-#include "~/.colors/urxvt"
-
