@@ -48,6 +48,9 @@ filetype plugin indent on
 
 " legendary efficiency boost
 nnoremap ; :
+nmap j gj
+nmap k gk
+
 
 " remap copy paste
 nmap <C-S-V> "+gP
@@ -56,36 +59,37 @@ vmap <C-S-C> "+y
 set pastetoggle=<F2> " F2 toggles paste mode
 
 " disable arrow keys
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-nnoremap j gj
-nnoremap k gk
+nmap <up> <nop>
+nmap <down> <nop>
+nmap <left> <nop>
+nmap <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 
 " match bracket pairs with tab
 nnoremap <tab> %
 vnoremap <tab> %
-" The following two lines are for highlighting lines which are too long
-":au BufWinEnter *c,*.cpp,*.h,*.py let w:m1=matchadd('Search', '\%<101v.\%>97v', -1)
-":au BufWinEnter *c,*.cpp,*.h,*.py,*.rb,*.mxml,*.as let w:m2=matchadd('ErrorMsg', '\%>110v.\+', -1)
 
+" Mappings {{{
 
-" Mappings:
-map <F6> :b#<CR>
-map <C-n> :noh<CR>
-map <C-Space> <C-x><C-o>
+" insert after current line
+map <C-o> <C-x><C-o>
+
+" Buffer navigation {{{
+map <left> :bprev<CR>
+map <right> :bnext<CR>
+
+" }}}
+
 
 " Taglist stuff
 nmap ,tu :!(ctags *.[ch])&<CR><CR>
 map ,tl :TlistToggle<CR>
 let Tlist_Exit_OnlyWindow = 1
 
-" CTAGS - code completion is nice
+" CTAGS  {{{ - code completion is nice
 set tags=tags;/
 " load specific tags
 so ~/.vim/tags/tags.vim
@@ -93,7 +97,9 @@ so ~/.vim/tags/tags.vim
 nnoremap <F12> :!ctags -R --sort=yes --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
 so ~/.vim/autotag.vim
 
-" OmniCppComplete
+" }}}
+
+" OmniCppComplete {{{
 let OmniCpp_NamespaceSearch = 1
 let OmniCpp_GlobalScopeSearch = 1
 let OmniCpp_ShowAccess = 1
@@ -106,24 +112,17 @@ let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 
+" }}}
 
-" C/C++ sweetness
-" Switch between header and impl
-nnoremap <F4> :A<CR>
-" Switch (vert split) between header and impl
-nnoremap <C-F4> :AV<CR>
-
-
+"-----------------------------------------------------------
 " Colorscheme bullshittery:
 " set t_Co=256 " this should be detected by vim automatically if your terminfo
 " is correct
 set background=dark
 colors molokai
 
-" Random commandline shortcuts
-" Specify filetypes
-au BufNewFile,BufRead *.i set filetype=swig
 
+"-----------------------------------------------------------
 " Gundo settings
 "nnoremap <F5> :GundoToggle<CR>
 
@@ -155,11 +154,77 @@ if (bufnr("%") == todelbufNr)
 endif
 exe "bd".todelbufNr
 endfunction
+" }}}
+
+"-----------------------------------------------------------
+" Folding {{{
+" Space to toggle folds.
+nnoremap <Space> za
+vnoremap <Space> za
+
+" }}}
+
+"-----------------------------------------------------------
+" RANDOM CRAP
+
+" Ack >> grep
+nnoremap <leader>a :Ack
+
+" A command to delete all trailing whitespace from a file.
+command DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
 
 " Audio bell == annoying
 set vb t_vb=
+" Make it easier to move around through blocks of text:
+noremap U 30k
+noremap D 30j
 
-" More ruby settings
+" Split/Join
+" ----------
+"
+" Basically this splits the current line into two new ones at the cursor position,
+" then joins the second one with whatever comes next.
+"
+" Example:                      Cursor Here
+"                                    |
+"                                    V
+" foo = ('hello', 'world', 'a', 'b', 'c',
+"        'd', 'e')
+"
+"            becomes
+"
+" foo = ('hello', 'world', 'a', 'b',
+"        'c', 'd', 'e')
+"
+" Especially useful for adding items in the middle of long lists/tuples in Python
+" while maintaining a sane text width.
+nnoremap K h/[^ ]<cr>"zd$jyyP^v$h"zpJk:s/\v +$//<cr>:noh<cr>j^
+
+"-----------------------------------------------------------
+" LANGUAGE SPECIFIC CRAP
+
+" C/C++ sweetness {{{
+" Switch between header and impl
+nnoremap <F4> :A<CR>
+" Switch (vert split) between header and impl
+nnoremap <C-F4> :AV<CR>
+
+
+" Shift-Alt-S    -- (C++) - change the current    word/identifier in a quoted
+" string to an ostream expression.
+" For example, put the  cursor on on the 'xxx' in:
+"       cout << "value = xxx\n";
+" hit Shift-Alt-S and it changes to:
+"       cout << "value = " << xxx << "\n";
+inoremap <S-A-s> <Esc>lbdei" << <Esc>pa << "<Esc>bb
+inoremap ^[S     <Esc>lbdei" << <Esc>pa << "<Esc>bb
+noremap <S-A-s>      lbdei" << <Esc>pa << "<Esc>bb
+noremap ^[S          lbdei" << <Esc>pa << "<Esc>bb
+onoremap <S-A-s> <C-c>lbdei" << <Esc>pa << "<Esc>bb
+onoremap ^[S     <C-c>lbdei" << <Esc>pa << "<Esc>bb
+" }}}
+
+" Ruby settings {{{
 let ruby_space_settings = 1
 highlight ExtraWhitespace ctermbg=green guibg=green
 match ExtraWhitespace /\s\+$/
@@ -168,29 +233,18 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" Make it easier to move around through blocks of text:
-noremap U 30k
-noremap D 30j
+" }}}
 
-" buffer navigation
-map <left> :bprev<CR>
-map <right> :bnext<CR>
 
-" Go specific settings
+" Go specific settings {{{
 augroup golang
   au!
   au FileType go set noexpandtab
 augroup END
 
+" }}}
 
-" Ack >> grep
-nnoremap <leader>a :Ack
-
-" A command to delete all trailing whitespace from a file.
-command DeleteTrailingWhitespace %s:\(\S*\)\s\+$:\1:
-
-
-" begin VIM Clojure
+" Clojure {{{
 if has("win32") || has("win64")
     let windows=1
     let vimfiles=$HOME . "/vimfiles"
@@ -230,3 +284,5 @@ endif
 nmap <silent> <Leader>sc :execute "ScreenShell java -cp \"" . classpath . sep . vimclojureRoot . "/lib/*" . "\" vimclojure.nailgun.NGServer 127.0.0.1" <cr>
 " Start a generic Clojure repl (uses screen.vim)
 nmap <silent> <Leader>sC :execute "ScreenShell java -cp \"" . classpath . "\" clojure.main" <cr>
+
+" }}} 
