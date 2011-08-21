@@ -34,6 +34,11 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
+
+" love me some current line highlighting
+set cul
+hi CursorLine term=none cterm=none ctermbg=8 
+
 " Pathogen == teh awesomes
 call pathogen#infect()
 filetype off
