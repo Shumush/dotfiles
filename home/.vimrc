@@ -105,6 +105,9 @@ so ~/.vim/autotag.vim
 
 " }}}
 
+"-----------------------------------------------------------
+" PLUGINS GALORE
+
 " OmniCppComplete {{{
 let OmniCpp_NamespaceSearch = 1
 let OmniCpp_GlobalScopeSearch = 1
@@ -124,6 +127,9 @@ set completeopt=menuone,menu,longest,preview
 nnoremap <leader>w :BD<CR>
 nnoremap <S-right> :BB<CR>
 nnoremap <S-left> :BF<CR>
+
+" Lustyjuggler
+nnoremap <leader>lj :LustyJuggler<CR>
 
 
 "-----------------------------------------------------------
