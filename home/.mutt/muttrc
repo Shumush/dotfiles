@@ -82,6 +82,7 @@ mailboxes +KDAB/INBOX +KDAB/INBOX.Archive +KDAB/INBOX.Sent +KDAB/INBOX.Drafts +K
 source $alias_file                                              # required for functionality
 source ~/.mutt/mutt-vimbrant                                    # source colors file
 source ~/.mutt/muttgpg
+source ~/.mutt/muttsmime
 source ~/.muttpriv/gmail.muttrc                                     # source gmail as default
 
 # account specific sourcs
