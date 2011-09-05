@@ -74,11 +74,8 @@ ignore *                                                        # ignore all hea
 unignore from: to: cc: date: subject:                           # show only these
 hdr_order from: to: cc: date: subject:                          # and in this order
 
-# boxes
-mailboxes +Binary/INBOX +Binary/archive +Binary/sent +Binary/drafts +Binary/spam +Binary/trash
-mailboxes +KDAB/INBOX +KDAB/INBOX.Archive +KDAB/INBOX.Sent +KDAB/INBOX.Drafts +KDAB/INBOX.Spam +KDAB/INBOX.Trash
-
 # always sourced
+source ~/.muttpriv/mailboxes
 source $alias_file                                              # required for functionality
 source ~/.mutt/mutt-vimbrant                                    # source colors file
 source ~/.mutt/muttgpg
