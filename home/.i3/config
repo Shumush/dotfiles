@@ -15,9 +15,9 @@ workspace 1 main
 workspace 2 www
 workspace 3 chat
 
-assign Chromium 2
-assign Quasselclient 3
-assign tomahawk 4
+assign [class=".*Chromium.*"] 2
+assign [class="Quasselclient"] 3
+assign [class="tomahawk"] 4
 
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
