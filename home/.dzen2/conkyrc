@@ -1,0 +1,23 @@
+background no
+out_to_console yes
+out_to_x no
+override_utf8_locale yes
+update_interval 1.0
+total_run_times 0
+
+TEXT
+^i(.dzen2/icons/mem.xbm)$mem \
+${if_up wlan0}^i(.dzen2/icons/wifi_01.xbm)${wireless_link_qual_perc wlan0}%${endif} \
+${if_match ${exec cat /sys/class/power_supply/AC/online} == 0}\
+${if_match ${battery_percent BAT1} > 80}^i(.dzen2/icons/bat_full_01.xbm)${else}\
+${if_match ${battery_percent BAT1} > 30}^i(.dzen2/icons/bat_low_01.xbm)${else}\
+^i(.dzen2/icons/bat_empty_01.xbm)${endif}\
+${endif}\
+${endif}\
+${if_match ${exec cat /sys/class/power_supply/AC/online} == 1}^i(.dzen2/icons/ac.xbm)${endif}\
+${if_match ${battery_percent BAT1} < 51}^fg(yellow)${endif}\
+${if_match ${battery_percent BAT1} < 30}^fg(red)${endif}\
+${battery_percent BAT1}%  \
+^i(.dzen2/icons/clock.xbm) ${time %a %b %d %H:%M}
+
+
