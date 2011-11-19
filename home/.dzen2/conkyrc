@@ -6,6 +6,11 @@ update_interval 1.0
 total_run_times 0
 
 TEXT
+${if_match ${head /dev/shm/mail-binary 1 2} > 0}\
+^fg(\#dfaf8f)^i(.dzen2/icons/mail.xbm)${head /dev/shm/mail-binary 1 2}\
+${else}\
+^fg()^i(.dzen2/icons/mail.xbm)${head /dev/shm/mail-binary 1 2}\
+${endif} \
 ^i(.dzen2/icons/mem.xbm)$mem \
 ${if_up wlan0}^i(.dzen2/icons/wifi_01.xbm)${wireless_link_qual_perc wlan0}%${endif} \
 ${if_match ${exec cat /sys/class/power_supply/AC/online} == 0}\
