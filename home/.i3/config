@@ -170,12 +170,5 @@ bindsym $mod+r mode "resize"
 bindsym $mod+equal resize shrink up 100 px or 30 ppt
 bindsym $mod+minus resize grow   up 100 px or 30 ppt
 
-
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-#exec i3status | i3bar -d
-#
-bar {
-    status_command i3status
-}
+# my custom bars
+exec ~/bin/start_bars.sh
