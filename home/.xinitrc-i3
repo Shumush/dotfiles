@@ -13,6 +13,7 @@ fi
 
 urxvtd -q -f -o
 smartbg -d 300  ~/walls/
+xset -b
 
 # exec gnome-session
 # exec startkde
