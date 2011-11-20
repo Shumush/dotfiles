@@ -11,7 +11,8 @@ ${if_match ${head /dev/shm/mail-binary 1 2} > 0}\
 ${else}\
 ^fg()^i(.dzen2/icons/mail.xbm)${head /dev/shm/mail-binary 1 2}\
 ${endif} \
-^i(.dzen2/icons/net_up_03.xbm)${downspeed wlan0} \
+^i(.dzen2/icons/net_down_03.xbm)${downspeed wlan0} \
+^i(.dzen2/icons/net_up_03.xbm)${upspeed wlan0} \
 ^i(.dzen2/icons/mem.xbm)$mem \
 ${if_up wlan0}^i(.dzen2/icons/wifi_01.xbm)${wireless_link_qual_perc wlan0}%${endif} \
 ${if_match ${exec cat /sys/class/power_supply/AC/online} == 0}\
