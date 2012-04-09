@@ -11,14 +11,13 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-urxvtd -q -f -o
-smartbg -d 300  ~/walls/
+#urxvtd -q -f -o
+smartbg ~/walls/1366x768/
 xset -b
 xbindkeys
-
 # exec gnome-session
 # exec startkde
 # exec startxfce4
 # ...or the Window Manager of your choice
-exec i3
+exec i3 --force-xinerama
 #exec xterm
