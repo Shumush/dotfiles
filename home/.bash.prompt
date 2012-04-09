@@ -164,7 +164,7 @@ function shorten_pwd
     pwd_length=20
     DIR=`pwd`
 
-    echo $DIR | /bin/grep "^$HOME" >> /dev/null
+    echo $DIR | grep "^$HOME" >> /dev/null
 
     if [ $? -eq 0 ]
     then
