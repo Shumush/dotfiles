@@ -1,6 +1,4 @@
-if [ -f /etc/bash_completion ]; then
-	    . /etc/bash_completion
-fi
+[ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
 # this makes it so only one TAB is required to get a list of all options
 set show-all-if-ambiguous on
