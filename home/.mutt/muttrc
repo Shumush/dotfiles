@@ -69,6 +69,8 @@ set reverse_name                                                # reply as whome
 set include                                                     # include message in replies
 set forward_quote                                               # include message in forwards
 
+set ispell = 'aspell --mode=email --email-margin=0 --run-together --check' # spell checking
+
 # headers to show
 ignore *                                                        # ignore all headers
 unignore from: to: cc: date: subject:                           # show only these
