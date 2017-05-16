@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/neliell/git/HybridDBT/build/src'
+let g:netrw_dirhist_2='/home/neliell/git/HybridDBT/build'
+let g:netrw_dirhist_3='/home/neliell/git/HybridDBT'
+let g:netrw_dirhist_4='/home/neliell/git/dotfiles/home/.vim'
+let g:netrw_dirhist_5='/home/neliell/git/dotfiles/home/.dzen2'
+let g:netrw_dirhist_6='/home/neliell/.vim'

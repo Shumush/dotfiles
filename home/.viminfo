@@ -1,0 +1,2197 @@
+# Ce fichier viminfo a été généré par Vim 7.4.
+# Vous pouvez l'éditer, mais soyez prudent.
+
+# 'encoding' dans lequel ce fichier a été écrit
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Dernier motif de recherche  :
+~MSle0~/Autre
+
+# Dernier motif de recherche Substitue  :
+~MSle0&solarized_termtrans=1
+
+# Dernières chaînes de substitution :
+$
+
+# Historique ligne de commande (chronologie décroissante) :
+:q
+:q!
+:x
+:r !pwd
+:!r pwd
+:r pwd
+:w
+:hi hjson
+:w SUPERTODOYAYYYY.txt
+:w TODOOOOOO
+:syntax off
+:w TODO_RAPPORT.txt
+:w TODO_RAPPORT.md
+:o StlcProp.v
+:split
+:s
+:hs
+:hsplit
+:!
+:r !locate vivado_hls
+:set lazyredraw
+:r !which runhaskell
+:r !date
+:!q
+:X
+:x!
+:r !ls /sys/class/backlight/acpi_video0/actual_brightness
+:r !which ghci
+:r !locate ghci
+:CoqStart
+:Q!
+:w cacaproutzizicul
+:.,.+1!
+::w
+:!ghci
+:o IndProp.v
+:u
+:b
+:w!
+:tabn
+:tablast
+:tabs
+:tabm
+:tabp
+:btan
+:Next
+:next
+:n
+:CoqKill
+:CoqLaunch
+
+# Historique chaîne de recherche (chronologie décroissante) :
+? @$
+??Autre
+??operator()
+??compute_path
+??root_
+??root_ =
+??compute
+??VALUE_S
+??value
+??std::cout
+??Unit
+??got a
+??parse_string
+??c ==
+??void forward(
+??unit
+??push_back
+?/Unit::
+?/parse_number
+??size()
+??index_of
+? \<std\>
+? \s\+$
+?/TEMPLATE_DIRS
+?/TEM
+?/SITE_ID
+??data
+??par
+??infix_max
+?/eof
+??infixO
+?/InfixDesc
+?/TKey
+?/case o of
+??infixP
+?/infixP
+?/opmap
+?/o
+?/0
+?/AST
+?/test
+?/tname
+?/Admitted
+?/FILL
+?/ST_App
+??ST_If
+?/==> (
+??ST_FixAbs :
+??ST_Fix
+?/has_type
+
+# Historique expression (chronologie décroissante) :
+
+# Historique ligne de saisie (chronologie décroissante) :
+
+# Historique ligne de saisie (chronologie décroissante) :
+
+# Registres :
+""0	LINE	0
+	The nature of my degree course 
+"1	LINE	0
+	The nature of my degree course 
+"2	LINE	0
+	>         pow' acc x n = pow' (acc*x) x (n-1)
+"3	LINE	0
+	>     Add a b -> eval a env + eval b env   
+	>
+"4	LINE	0
+	> eval (
+"5	LINE	0
+	> eval (Sub a b) env = eval a env - eval b env
+"6	LINE	0
+	> eval (Add a b) env = eval a env + eval b env
+"7	LINE	0
+	et renvoie sa valeur sous la forme d'un Double :
+"8	CHAR	0
+	
+	On va définir un type [Env] qui définit l'ensemble des
+	noms de variables associés à leurs valeurs.
+	
+	> type Env = [(String, Double)]
+	
+	
+"9	LINE	0
+	> lookup ((nom, val):suite) s = if 
+"-	CHAR	0
+	Autres
+
+# Marques dans le fichier :
+'0  1  0  ~/topkek.asm
+'1  1  0  ~/.Xdefaults
+'2  1  0  ~/.Xresources
+'3  1  0  ~/.vimrc
+'4  8  0  ~/.vim
+'5  2  0  ~/.conkyrc
+'6  1  0  ~/git/dotfiles/home/.dzen2/conkyrc
+'7  1  0  ~/git/dotfiles/home/.Xmodmap
+'8  1  0  ~/git/dotfiles/home/.Xresources.lo
+'9  1  0  ~/git/dotfiles/home/.Xresources
+
+# Liste de sauts (le plus récent en premier) :
+-'  1  0  ~/topkek.asm
+-'  1  0  ~/.Xdefaults
+-'  1  0  ~/.Xresources
+-'  1  0  ~/.vimrc
+-'  8  0  ~/.vim
+-'  2  0  ~/.conkyrc
+-'  1  0  ~/.conkyrc
+-'  1  0  ~/git/dotfiles/home/.dzen2/conkyrc
+-'  1  0  ~/git/dotfiles/home/.Xmodmap
+-'  1  0  ~/git/dotfiles/home/.Xresources.lo
+-'  1  0  ~/git/dotfiles/home/.Xresources
+-'  9  0  ~/git/dotfiles/home/.vim
+-'  47  18  ~/.xmonad/SNIHs/src/Text/Shaun/Sweeper.hs
+-'  154  0  ~/.xmonad/SNIHs/src/Text/Shaun/Sweeper.hs
+-'  1  0  ~/.xmonad/SNIHs/src/Text/Shaun/Sweeper.hs
+-'  153  0  ~/.xmonad/SNIHs/src/Text/Shaun/Sweeper.hs
+-'  1  0  ~/.xmonad/xmonad.hs
+-'  2  0  ~/.xmonad/app_menu.sn
+-'  1  0  ~/.xmonad/app_menu.sn
+-'  137  0  ~/.xmonad/xmonad.hs
+-'  49  0  ~/.xmonad/xmonad.hs
+-'  160  25  ~/.xmonad/xmonad.hs
+-'  117  0  ~/git/HybridDBT/src/isa/vexISA.cpp
+-'  1  0  ~/git/HybridDBT/src/isa/vexISA.cpp
+-'  1  0  ~/lettre.txt
+-'  6  16  ~/monty_python.txt
+-'  1  0  ~/monty_python.txt
+-'  46  47  ~/profession/extended_fancy/cv_english.tex
+-'  1  0  ~/profession/extended_fancy/cv_english.tex
+-'  135  0  ~/profession/extended_fancy/cv_english.tex
+-'  1  0  ~/profession/extended_fancy/cv.tex
+-'  967  8  ~/cm1.lhs
+-'  963  0  ~/cm1.lhs
+-'  749  0  ~/cm1.lhs
+-'  786  0  ~/cm1.lhs
+-'  1  0  ~/cm1.lhs
+-'  3  17  /etc/resolv.conf
+-'  1  0  /etc/resolv.conf
+-'  25  8  /etc/dhcp/dhclient.conf
+-'  24  28  /etc/dhcp/dhclient.conf
+-'  23  26  /etc/dhcp/dhclient.conf
+-'  22  26  /etc/dhcp/dhclient.conf
+-'  1  0  /etc/dhcp/dhclient.conf
+-'  161  0  /etc/resolvconf/update.d/libc
+-'  1  0  /etc/resolvconf/update.d/libc
+-'  1  0  /etc/resolvconf/interface-order
+-'  1  0  /etc/resolvconf/resolv.conf.d/head
+-'  1  0  /etc/resolvconf/resolv.conf.d/base
+-'  2  17  /etc/resolvconf/resolv.conf.d/base
+-'  2  19  /etc/resolv.conf
+-'  1  0  /etc/resolv
+-'  1  0  /etc/hosts
+-'  10  15  ~/prog/python/stuff/templates/flatpages/default.html
+-'  5  6  ~/prog/python/stuff/templates/flatpages/default.html
+-'  1  6  ~/prog/python/stuff/templates/flatpages/default.html
+-'  3  0  ~/prog/python/stuff/templates/index.html
+-'  1  0  ~/prog/python/stuff/templates/index.html
+-'  7  0  ~/prog/python/stuff/templates/flatpages/default.html
+-'  4  0  ~/prog/python/stuff/templates/index.html
+-'  1  0  ~/prog/python/stuff/stuff/urls.py
+-'  9  0  ~/prog/python/stuff/templates/index.html
+-'  22  0  ~/prog/python/stuff/stuff/urls.py
+-'  26  1  ~/prog/cpp/SHAUN/README.md
+-'  46  32  ~/prog/cpp/SHAUN/README.md
+-'  2  0  ~/prog/cpp/SHAUN/README.md
+-'  1  0  ~/prog/cpp/SHAUN/README.md
+-'  105  52  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  1  0  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  62  48  ~/prog/cpp/SHAUN/include/SHAUN/sweeper.hpp
+-'  1  0  ~/prog/cpp/SHAUN/include/SHAUN/sweeper.hpp
+-'  57  32  ~/prog/cpp/SHAUN/include/SHAUN/sweeper.hpp
+-'  133  36  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  45  0  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  101  28  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  135  0  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  167  0  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  65  54  ~/prog/cpp/SHAUN/include/SHAUN/sweeper.hpp
+-'  21  0  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  129  11  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  146  11  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  151  9  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  156  10  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  159  70  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  160  67  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  161  51  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  162  47  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  163  70  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  9  33  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  13  39  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  25  18  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  78  0  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  51  50  ~/prog/cpp/SHAUN/README.md
+-'  28  6  ~/prog/cpp/SHAUN/include/SHAUN/sweeper.hpp
+-'  141  12  ~/prog/cpp/SHAUN/src/sweeper.cpp
+-'  5  39  ~/prog/cpp/SHAUN/bin/lel.shaun
+-'  1  0  ~/prog/cpp/SHAUN/bin/lel.shaun
+-'  41  25  ~/prog/cpp/SHAUN/src/printer.cpp
+-'  1  0  ~/prog/cpp/SHAUN/src/printer.cpp
+
+# Historique des marques dans les fichiers (les plus récentes en premier) :
+
+> ~/topkek.asm
+	"	1	0
+
+> ~/.Xdefaults
+	"	1	0
+
+> ~/.Xresources
+	"	1	0
+
+> ~/.vimrc
+	"	1	0
+	^	25	44
+	.	25	43
+	+	13	0
+	+	5	19
+	+	5	20
+	+	5	0
+	+	4	18
+	+	2	9
+	+	3	3
+	+	4	3
+	+	3	2
+	+	9	11
+	+	10	15
+	+	11	18
+	+	12	0
+	+	24	52
+	+	26	2
+	+	25	0
+	+	26	0
+	+	25	30
+	+	24	46
+	+	25	43
+
+> ~/.conkyrc
+	"	2	0
+
+> ~/git/dotfiles/home/.dzen2/conkyrc
+	"	1	0
+
+> ~/git/dotfiles/home/.Xmodmap
+	"	1	0
+
+> ~/git/dotfiles/home/.Xresources.lo
+	"	1	0
+
+> ~/git/dotfiles/home/.Xresources
+	"	1	0
+
+> ~/.xmonad/SNIHs/src/Text/Shaun/Sweeper.hs
+	"	47	18
+	^	53	29
+	.	53	28
+	+	49	36
+	+	52	0
+	+	49	57
+	+	35	0
+	+	35	0
+	+	32	0
+	+	34	25
+	+	79	7
+	+	33	16
+	+	34	16
+	+	33	40
+	+	34	40
+	+	52	15
+	+	79	0
+	+	190	56
+	+	190	29
+	+	190	3
+	+	179	18
+	+	178	47
+	+	190	0
+	+	190	0
+	+	53	43
+	+	178	48
+	+	179	33
+	+	53	28
+
+> ~/git/riscv-tools/build.sh
+	"	1	0
+
+> ~/git/riscv-tools/README.md
+	"	940	0
+
+> ~/git/riscv-tools/build.ssh
+	"	1	0
+
+> ~/git/riscv-tools/build
+	"	1	0
+
+> ~/.bashrc
+	"	126	41
+	^	126	42
+	.	127	0
+	+	122	34
+	+	121	16
+	+	124	23
+	+	125	36
+	+	126	12
+	+	126	13
+	+	127	0
+
+> ~/.xmonad/xmonad.hs
+	"	1	0
+	^	81	51
+	.	81	50
+	+	139	33
+	+	142	19
+	+	143	48
+	+	127	49
+	+	128	41
+	+	127	39
+	+	128	35
+	+	127	39
+	+	128	88
+	+	131	86
+	+	142	29
+	+	138	18
+	+	145	26
+	+	143	60
+	+	145	54
+	+	146	27
+	+	145	17
+	+	146	31
+	+	108	57
+	+	128	55
+	+	131	64
+	+	128	75
+	+	131	88
+	+	128	79
+	+	126	6
+	+	111	72
+	+	115	28
+	+	125	5
+	+	116	32
+	+	118	19
+	+	116	24
+	+	119	21
+	+	120	0
+	+	121	0
+	+	122	0
+	+	119	41
+	+	120	27
+	+	119	27
+	+	121	42
+	+	122	46
+	+	124	34
+	+	120	19
+	+	119	19
+	+	121	19
+	+	122	20
+	+	121	20
+	+	120	20
+	+	119	20
+	+	135	22
+	+	111	18
+	+	115	16
+	+	139	26
+	+	25	29
+	+	116	0
+	+	115	17
+	+	105	40
+	+	80	37
+	+	41	24
+	+	42	66
+	+	43	15
+	+	46	58
+	+	47	15
+	+	48	24
+	+	49	3
+	+	60	23
+	+	62	14
+	+	60	20
+	+	63	29
+	+	62	31
+	+	65	33
+	+	66	33
+	+	67	30
+	+	68	18
+	+	70	16
+	+	157	5
+	+	159	5
+	+	103	20
+	+	104	14
+	+	103	15
+	+	105	29
+	+	112	36
+	+	113	26
+	+	129	60
+	+	130	34
+	+	132	60
+	+	133	34
+	+	28	0
+	+	30	23
+	+	132	59
+	+	129	59
+	+	133	48
+	+	130	59
+	+	129	59
+	+	132	43
+	+	133	48
+	+	132	48
+	+	133	59
+	+	30	7
+	+	70	19
+	+	81	50
+
+> ~/.xmonad/app_menu.sn
+	"	2	0
+	^	20	36
+	.	20	35
+	+	1	7
+	+	34	17
+	+	34	22
+	+	34	19
+	+	34	24
+	+	34	15
+	+	34	20
+	+	34	23
+	+	34	14
+	+	34	0
+	+	1	8
+	+	8	19
+	+	34	3
+	+	12	15
+	+	34	0
+	+	12	38
+	+	33	40
+	+	33	0
+	+	14	15
+	+	33	18
+	+	33	21
+	+	33	3
+	+	33	21
+	+	33	8
+	+	33	51
+	+	12	14
+	+	12	15
+	+	12	17
+	+	13	4
+	+	14	17
+	+	15	3
+	+	4	10
+	+	5	0
+	+	5	0
+	+	5	0
+	+	5	24
+	+	7	0
+	+	8	1
+	+	8	13
+	+	9	21
+	+	10	3
+	+	14	20
+	+	19	25
+	+	22	4
+	+	20	15
+	+	22	0
+	+	20	69
+	+	33	0
+	+	22	4
+	+	24	48
+	+	29	24
+	+	23	0
+	+	33	0
+	+	32	31
+	+	27	8
+	+	31	10
+	+	21	33
+	+	14	0
+	+	1	0
+	+	8	0
+	+	4	19
+	+	8	0
+	+	32	32
+	+	33	11
+	+	33	11
+	+	33	0
+	+	33	0
+	+	33	0
+	+	33	0
+	+	25	1
+	+	25	0
+	+	22	0
+	+	20	35
+
+> ~/git/HybridDBT/src/isa/vexISA.cpp
+	"	117	0
+
+> ~/lettre.txt
+	"	1	0
+	^	1	9
+	.	1	8
+	+	2	79
+	+	18	0
+	+	6	78
+	+	7	25
+	+	8	0
+	+	7	24
+	+	9	61
+	+	2	79
+	+	4	31
+	+	9	77
+	+	17	14
+	+	1	8
+
+> ~/monty_python.txt
+	"	6	16
+	^	6	17
+	.	6	16
+	+	4	139
+	+	3	68
+	+	4	49
+	+	4	75
+	+	7	96
+	+	7	120
+	+	4	65
+	+	7	97
+	+	9	0
+	+	4	48
+	+	7	67
+	+	6	16
+
+> ~/profession/extended_fancy/cv_english.tex
+	"	46	47
+	^	46	48
+	.	46	48
+	+	30	13
+	+	34	15
+	+	45	21
+	+	48	19
+	+	51	19
+	+	54	31
+	+	62	12
+	+	90	0
+	+	86	13
+	+	88	0
+	+	86	13
+	+	88	45
+	+	78	20
+	+	80	42
+	+	82	13
+	+	83	82
+	+	82	11
+	+	72	34
+	+	74	85
+	+	74	86
+	+	75	18
+	+	66	12
+	+	70	4
+	+	68	77
+	+	69	26
+	+	70	0
+	+	69	28
+	+	96	55
+	+	98	63
+	+	101	40
+	+	103	43
+	+	46	48
+
+> ~/profession/extended_fancy/cv.tex
+	"	1	0
+	^	142	14
+	.	21	30
+	+	49	4
+	+	53	0
+	+	49	34
+	+	21	30
+
+> ~/cm1.lhs
+	"	967	8
+	^	967	9
+	.	967	9
+	+	858	23
+	+	860	15
+	+	859	3
+	+	860	39
+	+	861	0
+	+	862	0
+	+	863	0
+	+	861	8
+	+	862	8
+	+	861	28
+	+	862	28
+	+	863	53
+	+	864	30
+	+	865	31
+	+	867	33
+	+	849	42
+	+	868	31
+	+	869	30
+	+	868	19
+	+	872	67
+	+	873	59
+	+	876	0
+	+	875	43
+	+	876	0
+	+	875	26
+	+	882	0
+	+	884	60
+	+	888	10
+	+	887	60
+	+	890	17
+	+	892	74
+	+	893	36
+	+	894	0
+	+	897	79
+	+	900	35
+	+	902	1
+	+	901	3
+	+	900	72
+	+	901	108
+	+	902	93
+	+	904	94
+	+	907	15
+	+	908	11
+	+	907	15
+	+	908	7
+	+	910	87
+	+	912	30
+	+	913	0
+	+	922	16
+	+	923	0
+	+	924	0
+	+	925	11
+	+	928	11
+	+	927	6
+	+	928	98
+	+	930	80
+	+	936	18
+	+	935	10
+	+	936	17
+	+	937	20
+	+	934	6
+	+	935	15
+	+	937	20
+	+	935	15
+	+	936	19
+	+	934	9
+	+	941	70
+	+	933	0
+	+	939	54
+	+	937	21
+	+	936	56
+	+	939	23
+	+	941	73
+	+	946	25
+	+	948	8
+	+	950	17
+	+	951	40
+	+	952	0
+	+	953	86
+	+	954	26
+	+	953	90
+	+	955	43
+	+	958	60
+	+	960	70
+	+	962	6
+	+	963	26
+	+	965	1
+	+	963	3
+	+	965	13
+	+	963	18
+	+	962	13
+	+	963	22
+	+	965	45
+	+	965	0
+	+	966	86
+	+	967	8
+	+	964	66
+	+	963	8
+	+	964	5
+	+	967	9
+
+> /usr/share/vim/vim74/doc/help.txt
+	"	1	1
+
+> /etc/resolv.conf
+	"	3	17
+	^	3	18
+	.	3	17
+	+	3	17
+
+> /etc/dhcp/dhclient.conf
+	"	25	8
+	^	25	9
+	.	25	8
+	+	25	28
+	+	23	27
+	+	25	8
+
+> /etc/resolvconf/update.d/libc
+	"	161	0
+
+> /etc/resolvconf/interface-order
+	"	1	0
+
+> /etc/resolvconf/resolv.conf.d/head
+	"	1	0
+
+> /etc/resolvconf/resolv.conf.d/base
+	"	1	0
+	^	2	18
+	.	2	17
+	+	1	17
+	+	2	17
+
+> /etc/resolv
+	"	1	0
+
+> /etc/hosts
+	"	1	0
+	^	4	10
+	.	4	9
+	+	3	0
+	+	4	9
+
+> ~/prog/python/stuff/templates/flatpages/default.html
+	"	10	15
+	^	10	16
+	.	12	0
+	+	2	0
+	+	2	8
+	+	3	0
+	+	5	0
+	+	5	0
+	+	7	8
+	+	8	0
+	+	5	0
+	+	9	54
+	+	10	30
+	+	12	0
+
+> ~/prog/python/stuff/templates/index.html
+	"	3	0
+	^	9	13
+	.	9	12
+	+	1	2
+	+	1	0
+	+	1	5
+	+	12	6
+	+	2	7
+	+	5	8
+	+	3	112
+	+	4	90
+	+	11	8
+	+	10	13
+	+	8	40
+	+	9	15
+	+	8	32
+	+	9	12
+
+> ~/prog/python/stuff/stuff/urls.py
+	"	1	0
+	^	21	10
+	.	21	10
+	+	21	55
+	+	17	42
+	+	21	10
+
+> ~/prog/cpp/SHAUN/README.md
+	"	26	1
+	^	53	3
+	.	46	26
+	+	51	68
+	+	46	26
+
+> ~/prog/cpp/SHAUN/src/sweeper.cpp
+	"	105	52
+	^	105	53
+	.	105	53
+	+	125	0
+	+	126	14
+	+	127	44
+	+	129	9
+	+	130	14
+	+	129	24
+	+	131	43
+	+	133	37
+	+	129	25
+	+	135	0
+	+	136	6
+	+	137	6
+	+	138	6
+	+	139	6
+	+	140	6
+	+	141	13
+	+	142	0
+	+	129	11
+	+	21	59
+	+	82	43
+	+	99	51
+	+	105	58
+	+	82	38
+	+	99	46
+	+	129	29
+	+	130	14
+	+	131	43
+	+	133	37
+	+	105	53
+
+> ~/prog/cpp/SHAUN/include/SHAUN/sweeper.hpp
+	"	62	48
+	^	62	49
+	.	62	48
+	+	21	6
+	+	20	39
+	+	34	6
+	+	39	6
+	+	43	49
+	+	44	44
+	+	45	6
+	+	51	6
+	+	50	24
+	+	56	6
+	+	60	29
+	+	61	6
+	+	30	41
+	+	31	0
+	+	27	22
+	+	28	6
+	+	52	46
+	+	57	38
+	+	62	53
+	+	65	54
+	+	52	41
+	+	57	33
+	+	62	48
+
+> ~/prog/cpp/SHAUN/bin/lel.shaun
+	"	5	39
+	^	5	40
+	.	5	40
+	+	3	30
+	+	5	40
+
+> ~/prog/cpp/SHAUN/src/printer.cpp
+	"	41	25
+	^	41	26
+	.	41	25
+	+	35	24
+	+	55	39
+	+	54	0
+	+	43	21
+	+	43	18
+	+	51	0
+	+	47	31
+	+	51	0
+	+	41	65
+	+	47	38
+	+	41	12
+	+	40	24
+	+	55	30
+	+	41	13
+	+	43	14
+	+	47	10
+	+	52	6
+	+	45	0
+	+	47	11
+	+	46	9
+	+	45	8
+	+	46	8
+	+	47	10
+	+	49	8
+	+	52	27
+	+	48	15
+	+	50	15
+	+	41	25
+
+> ~/prog/cpp/SHAUN/include/SHAUN/parser.hpp
+	"	287	14
+	.	287	0
+	+	428	51
+	+	428	0
+	+	35	1
+	+	57	56
+	+	58	0
+	+	98	0
+	+	4	17
+	+	27	1
+	+	32	0
+	+	57	0
+	+	57	8
+	+	57	0
+	+	57	0
+	+	57	0
+	+	53	0
+	+	56	0
+	+	57	0
+	+	55	59
+	+	60	0
+	+	59	32
+	+	64	39
+	+	102	0
+	+	375	44
+	+	379	43
+	+	286	0
+	+	284	23
+	+	289	0
+	+	286	24
+	+	289	34
+	+	289	21
+	+	289	14
+	+	289	0
+	+	289	24
+	+	289	35
+	+	289	0
+	+	289	0
+	+	289	0
+	+	289	0
+	+	289	0
+	+	289	40
+	+	289	0
+	+	283	32
+	+	307	0
+	+	306	9
+	+	308	0
+	+	309	13
+	+	310	0
+	+	310	0
+	+	314	13
+	+	321	0
+	+	297	12
+	+	289	0
+	+	286	0
+	+	287	0
+	+	289	16
+	+	290	12
+	+	292	12
+	+	291	13
+	+	310	17
+	+	310	0
+	+	310	35
+	+	310	33
+	+	321	19
+	+	322	35
+	+	323	0
+	+	310	33
+	+	311	0
+	+	287	76
+	+	372	40
+	+	372	0
+	+	381	0
+	+	287	0
+
+> ~/prog/cpp/SHAUN/bin/test.shaun
+	"	3	32
+	^	3	33
+	.	3	33
+	+	8	0
+	+	2	14
+	+	3	4
+	+	4	4
+	+	3	14
+	+	2	2
+	+	3	4
+	+	4	4
+	+	3	33
+
+> ~/prog/cpp/SHAUN/bin/test.
+	"	1	0
+
+> ~/prog/cpp/SHAUN/bin/test
+	"	1	0
+
+> ~/.vim/syntax/hjson.vim
+	"	25	33
+
+> ~/prog/cpp/SHAUN/shaun.vim
+	"	12	19
+	^	12	20
+	.	12	19
+	+	3	0
+	+	2	16
+	+	4	29
+	+	10	43
+	+	11	40
+	+	10	0
+	+	15	39
+	+	18	18
+	+	9	0
+	+	5	0
+	+	18	21
+	+	19	27
+	+	21	54
+	+	22	18
+	+	21	53
+	+	22	48
+	+	23	18
+	+	27	0
+	+	23	57
+	+	24	0
+	+	27	0
+	+	24	53
+	+	25	0
+	+	12	3
+	+	11	58
+	+	12	16
+	+	11	74
+	+	27	0
+	+	18	23
+	+	15	40
+	+	25	0
+	+	12	17
+	+	11	68
+	+	12	19
+
+> ~/prog/cpp/SHAUN/include/SHAUN/shaun.hpp
+	"	70	6
+	^	70	7
+	.	61	6
+	+	27	10
+	+	26	45
+	+	28	6
+	+	34	0
+	+	32	39
+	+	33	6
+	+	65	28
+	+	66	6
+	+	65	20
+	+	72	6
+	+	63	0
+	+	60	25
+	+	56	26
+	+	75	0
+	+	75	0
+	+	79	5
+	+	85	0
+	+	80	38
+	+	81	73
+	+	82	6
+	+	88	0
+	+	186	0
+	+	113	0
+	+	118	9
+	+	123	15
+	+	114	40
+	+	116	0
+	+	61	6
+
+> ~/prog/cpp/SHAUN/src/shaun.cpp
+	"	206	33
+	^	206	34
+	.	319	0
+	+	300	54
+	+	310	46
+	+	314	5
+	+	319	0
+
+> ~/prog/cpp/SHAUN/include/SHAUN/visitor.hpp
+	"	19	0
+
+> ~/prog/cpp/SHAUN/include/SHAUN/printer.hpp
+	"	4	0
+
+> ~/prog/cpp/SHAUN/include/SHAUN/exception.hpp
+	"	9	0
+	^	9	0
+	.	9	0
+	+	9	0
+
+> ~/Documents/MFDS/topkek
+	"	1	0
+	^	1	0
+
+> ~/.vim/ftdetext/hjson.vim
+	"	1	18
+	^	1	19
+	.	1	18
+	+	1	18
+
+> ~/prog/cpp/foutoire/string_to_double.cpp
+	"	1	0
+	^	7	2
+	.	7	2
+	+	4	29
+	+	4	31
+	+	11	51
+	+	11	22
+	+	4	67
+	+	11	56
+	+	11	22
+	+	4	31
+	+	11	46
+	+	4	0
+	+	4	0
+	+	4	0
+	+	4	28
+	+	4	0
+	+	4	0
+	+	4	0
+	+	9	55
+	+	11	0
+	+	1	0
+	+	2	17
+	+	9	0
+	+	9	21
+	+	9	21
+	+	9	21
+	+	9	50
+	+	8	0
+	+	9	18
+	+	10	42
+	+	7	2
+
+> ~/prog/cpp/SHAUN/bin/test.json
+	"	12	0
+	^	12	0
+	.	11	0
+	+	1	16
+	+	1	10
+	+	4	0
+	+	2	13
+	+	3	32
+	+	2	13
+	+	10	0
+	+	9	8
+	+	11	0
+
+> ~/prog/cpp/SHAUN/Makefile
+	"	18	0
+
+> ~/prog/cpp/SHAUN/LICENSE
+	"	1	0
+
+> ~/Téléchargements/strtod.c
+	"	121	0
+
+> ~/prog/cpp/foutoire/string_to_double
+	"	1	0
+
+> ~/prog/cpp/foutoire/main.cpp
+	"	12	0
+	.	12	0
+	+	38	0
+	+	37	10
+	+	36	0
+	+	12	0
+	+	30	0
+	+	15	0
+	+	21	0
+	+	25	0
+	+	36	44
+	+	30	0
+	+	29	23
+	+	2	0
+	+	1	0
+	+	11	0
+	+	10	0
+	+	12	0
+
+> ~/Xilinx/SDSoC/2016.2/Vivado_HLS/2016.2/bin/vivado_hls
+	"	1	0
+
+> ~/.xmonad/SNIHs/SNIHs.cabal
+	"	60	1
+	^	13	24
+	.	13	23
+	+	13	23
+
+> ~/prog/python/stuff/templates/header.html
+	"	3	8
+	^	4	9
+	.	5	0
+	+	4	0
+	+	3	19
+	+	4	9
+	+	5	0
+
+> ~/prog/python/stuff/stuff/settings.py
+	"	61	58
+	^	61	59
+	.	61	58
+	+	28	24
+	+	41	30
+	+	91	21
+	+	40	25
+	+	32	8
+	+	56	0
+	+	61	58
+
+> ~/prog/python/stuff/flatpages/default.html
+	"	6	25
+	^	6	26
+	.	6	25
+	+	1	6
+	+	8	7
+	+	7	0
+	+	4	0
+	+	3	30
+	+	6	25
+
+> ~/Documents/AASR/CM_PIERRE.txt
+	"	1	0
+	^	1	0
+
+> ~/prog/python/stuff/manage.py
+	"	1	0
+
+> ~/profession/extended_fancy/exit
+	"	1	0
+
+> ~/prog/haskell/ScriptLanguage/Parser.hs
+	"	289	4
+	^	44	120
+	.	182	0
+	+	203	0
+	+	204	2
+	+	205	0
+	+	219	0
+	+	221	0
+	+	244	32
+	+	249	35
+	+	200	0
+	+	200	0
+	+	261	16
+	+	249	36
+	+	244	33
+	+	250	38
+	+	334	0
+	+	299	0
+	+	247	17
+	+	252	13
+	+	250	2
+	+	251	7
+	+	252	14
+	+	252	14
+	+	253	0
+	+	262	16
+	+	252	26
+	+	359	0
+	+	359	39
+	+	359	31
+	+	249	0
+	+	223	54
+	+	255	36
+	+	259	35
+	+	252	14
+	+	254	25
+	+	258	25
+	+	249	19
+	+	250	39
+	+	252	16
+	+	359	0
+	+	359	0
+	+	244	32
+	+	61	13
+	+	63	27
+	+	170	0
+	+	172	0
+	+	326	0
+	+	51	21
+	+	359	0
+	+	356	52
+	+	358	53
+	+	356	18
+	+	358	18
+	+	297	3
+	+	293	33
+	+	296	26
+	+	293	49
+	+	293	17
+	+	296	24
+	+	296	30
+	+	296	7
+	+	296	25
+	+	297	0
+	+	296	27
+	+	295	15
+	+	296	35
+	+	142	12
+	+	142	18
+	+	146	1
+	+	144	22
+	+	145	32
+	+	143	10
+	+	144	12
+	+	143	12
+	+	163	1
+	+	170	1
+	+	146	23
+	+	170	2
+	+	163	0
+	+	163	0
+	+	163	0
+	+	163	11
+	+	163	0
+	+	152	0
+	+	158	0
+	+	155	25
+	+	156	60
+	+	146	25
+	+	151	16
+	+	152	17
+	+	157	16
+	+	159	7
+	+	160	34
+	+	161	48
+	+	162	0
+	+	161	39
+	+	154	13
+	+	186	0
+	+	184	40
+	+	186	0
+	+	181	0
+	+	182	0
+
+> ~/prog/haskell/ParsingUtils/Utils.hs
+	"	7	0
+	.	8	0
+	+	2	0
+	+	1	32
+	+	8	10
+	+	8	14
+	+	8	39
+	+	8	27
+	+	8	10
+	+	8	4
+	+	8	14
+	+	8	28
+	+	8	21
+	+	8	22
+	+	8	20
+	+	8	21
+	+	8	20
+	+	8	20
+	+	8	20
+	+	8	0
+
+> ~/cacaproutzizicul
+	"	1	0
+
+> ~/prog/haskell/ScriptLanguage/azdoazidj
+	"	8	0
+	^	8	0
+	.	5	20
+	+	5	6
+	+	3	19
+	+	5	25
+	+	7	22
+	+	1	9
+	+	7	59
+	+	5	25
+	+	8	0
+	+	7	47
+	+	9	0
+	+	5	20
+
+> ~/bin/cabal8
+	"	3	68
+	^	3	69
+	.	3	69
+	+	3	69
+
+> ~/bin/ghc8
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/.xmonad/SNIHs/src/Text/Shaun/Lexer.hs
+	"	24	0
+
+> ~/.xmonad/SNIHs/src/Text/Shaun/Parser.hs
+	"	1	0
+	^	16	66
+	.	16	65
+	+	16	65
+
+> ~/Téléchargements/StlcProp.v
+	"	612	0
+	.	610	0
+	+	610	0
+	+	610	28
+	+	610	18
+	+	610	47
+	+	610	10
+	+	610	6
+	+	610	26
+	+	610	29
+	+	610	11
+	+	610	6
+	+	610	10
+	+	610	16
+	+	610	10
+	+	610	24
+	+	610	20
+	+	610	0
+	+	610	3
+	+	610	20
+	+	610	0
+	+	610	0
+	+	610	0
+	+	610	0
+	+	610	18
+	+	610	20
+	+	610	19
+	+	610	17
+	+	610	26
+	+	610	0
+	+	610	0
+	+	610	0
+	+	609	28
+	+	610	14
+	+	610	20
+	+	610	9
+	+	610	10
+	+	610	23
+	+	610	8
+	+	609	34
+	+	610	38
+	+	610	0
+	+	610	20
+	+	610	26
+	+	610	0
+	+	610	19
+	+	610	27
+	+	610	18
+	+	610	13
+	+	610	0
+	+	610	33
+	+	610	18
+	+	610	0
+	+	610	1
+	+	610	16
+	+	609	28
+	+	610	26
+	+	610	0
+	+	610	0
+	+	610	0
+	+	610	35
+	+	610	24
+	+	610	3
+	+	610	4
+	+	610	23
+	+	610	32
+	+	610	20
+	+	610	27
+	+	610	29
+	+	610	0
+	+	610	5
+	+	610	19
+	+	610	13
+	+	610	25
+	+	610	0
+	+	610	16
+	+	610	16
+	+	610	5
+	+	610	0
+	+	610	18
+	+	610	3
+	+	610	0
+	+	610	4
+	+	610	24
+	+	610	4
+	+	610	48
+	+	610	17
+	+	610	0
+	+	610	49
+	+	610	21
+	+	610	55
+	+	610	28
+	+	610	35
+	+	610	35
+	+	610	48
+	+	610	0
+	+	610	25
+	+	610	16
+	+	610	3
+	+	610	14
+	+	610	20
+	+	610	0
+
+> ~/Téléchargements/Goals
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Téléchargements/Infos
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Téléchargements/MoreStlc.v
+	"	696	0
+	^	696	1
+	.	666	0
+	+	2273	0
+	+	2272	39
+	+	2273	0
+	+	2272	50
+	+	2273	0
+	+	2288	0
+	+	2286	19
+	+	2288	0
+	+	2288	0
+	+	2288	58
+	+	2288	0
+	+	2286	17
+	+	2287	61
+	+	2287	51
+	+	2286	23
+	+	2287	51
+	+	2288	4
+	+	625	0
+	+	625	0
+	+	620	20
+	+	623	49
+	+	615	43
+	+	625	0
+	+	620	26
+	+	623	26
+	+	625	0
+	+	619	11
+	+	620	18
+	+	623	30
+	+	618	0
+	+	668	0
+	+	631	0
+	+	636	28
+	+	636	8
+	+	636	21
+	+	636	4
+	+	636	28
+	+	636	5
+	+	637	0
+	+	636	0
+	+	637	0
+	+	637	8
+	+	648	0
+	+	637	6
+	+	637	5
+	+	636	5
+	+	636	3
+	+	636	10
+	+	636	6
+	+	636	6
+	+	637	4
+	+	648	0
+	+	637	6
+	+	640	3
+	+	648	6
+	+	648	2
+	+	648	0
+	+	636	13
+	+	640	3
+	+	631	0
+	+	634	4
+	+	632	51
+	+	636	0
+	+	634	7
+	+	636	14
+	+	639	0
+	+	638	12
+	+	648	0
+	+	640	8
+	+	638	52
+	+	642	43
+	+	638	37
+	+	642	43
+	+	644	17
+	+	646	21
+	+	642	39
+	+	648	26
+	+	646	19
+	+	650	9
+	+	648	32
+	+	648	0
+	+	640	11
+	+	648	13
+	+	650	21
+	+	648	24
+	+	648	0
+	+	646	22
+	+	650	62
+	+	652	5
+	+	654	9
+	+	652	36
+	+	654	5
+	+	654	53
+	+	658	0
+	+	656	3
+	+	656	23
+	+	658	0
+	+	656	25
+	+	661	0
+	+	666	0
+
+> ~/Téléchargements/Stlc.v
+	"	734	10
+	^	720	0
+	.	720	0
+	+	794	13
+	+	806	0
+	+	795	14
+	+	796	15
+	+	797	16
+	+	806	15
+	+	806	13
+	+	806	0
+	+	806	0
+	+	805	18
+	+	805	20
+	+	805	0
+	+	805	0
+	+	805	26
+	+	805	0
+	+	805	22
+	+	798	14
+	+	798	23
+	+	798	22
+	+	798	16
+	+	799	17
+	+	800	4
+	+	797	3
+	+	799	3
+	+	800	18
+	+	801	24
+	+	801	18
+	+	802	18
+	+	803	17
+	+	801	0
+	+	798	0
+	+	804	2
+	+	834	0
+	+	825	15
+	+	826	13
+	+	826	0
+	+	826	0
+	+	826	0
+	+	796	2
+	+	796	13
+	+	796	8
+	+	796	13
+	+	796	24
+	+	799	26
+	+	796	0
+	+	826	0
+	+	825	88
+	+	827	0
+	+	828	14
+	+	829	30
+	+	833	0
+	+	829	16
+	+	833	0
+	+	833	0
+	+	829	43
+	+	830	10
+	+	829	28
+	+	830	41
+	+	831	28
+	+	832	3
+	+	829	15
+	+	894	0
+	+	878	19
+	+	893	14
+	+	893	15
+	+	893	21
+	+	893	22
+	+	893	22
+	+	893	22
+	+	893	15
+	+	893	0
+	+	893	22
+	+	893	0
+	+	893	29
+	+	893	31
+	+	893	30
+	+	893	0
+	+	879	7
+	+	869	33
+	+	880	9
+	+	881	17
+	+	882	9
+	+	883	15
+	+	884	15
+	+	885	16
+	+	893	0
+	+	884	10
+	+	893	17
+	+	893	3
+	+	893	15
+	+	893	0
+	+	886	0
+	+	893	0
+	+	887	21
+	+	888	24
+	+	889	16
+	+	890	24
+	+	891	15
+	+	892	3
+	+	720	0
+
+> ~/Téléchargements/StlcProp.
+	"	1	0
+
+> ~/TODO_RAPPORT.md
+	"	80	0
+	^	56	21
+	.	81	0
+	+	80	69
+	+	27	27
+	+	4	4
+	+	14	4
+	+	80	69
+	+	81	0
+	+	23	0
+	+	22	24
+	+	9	42
+	+	55	16
+	+	51	10
+	+	81	76
+	+	81	85
+	+	41	26
+	+	81	0
+	+	43	0
+	+	47	0
+	+	81	0
+
+> ~/TP89/tp89.thy
+	"	385	0
+
+> ~/Documents/COMP/TP2-llvm/monprogramme.vsl
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/COMP/rapport.tex
+	"	74	0
+
+> ~/Documents/COMP/TP2-llvm/README.md
+	"	9	0
+	^	9	0
+	.	8	0
+	+	8	0
+
+> ~/Documents/COMP/TP2-llvm/build.sh
+	"	3	0
+
+> ~/Documents/COMP/TP2-llvm/compile.sh
+	"	1	0
+
+> ~/chapitre1.tex
+	"	79	0
+
+> ~/projet/FPGA-Storm/rapport/vivado_hls.tex
+	"	50	0
+	^	50	1
+	.	50	0
+	+	66	0
+	+	62	74
+	+	64	20
+	+	62	27
+	+	30	47
+	+	31	41
+	+	11	43
+	+	11	68
+	+	12	44
+	+	11	51
+	+	12	54
+	+	15	0
+	+	15	0
+	+	54	47
+	+	20	19
+	+	18	18
+	+	19	68
+	+	20	67
+	+	21	45
+	+	21	27
+	+	21	28
+	+	6	10
+	+	22	18
+	+	21	67
+	+	22	60
+	+	30	56
+	+	30	78
+	+	35	100
+	+	38	44
+	+	44	2
+	+	38	53
+	+	44	1
+	+	47	41
+	+	10	15
+	+	11	52
+	+	10	39
+	+	6	66
+	+	21	59
+	+	11	0
+	+	13	50
+	+	12	102
+	+	6	1
+	+	12	54
+	+	13	50
+	+	13	50
+	+	14	0
+	+	13	0
+	+	18	38
+	+	22	76
+	+	23	37
+	+	25	33
+	+	30	64
+	+	31	62
+	+	35	74
+	+	38	27
+	+	41	1
+	+	38	37
+	+	37	14
+	+	45	13
+	+	38	7
+	+	41	16
+	+	39	13
+	+	44	62
+	+	45	10
+	+	40	27
+	+	42	82
+	+	43	50
+	+	30	12
+	+	31	76
+	+	32	33
+	+	31	40
+	+	32	82
+	+	33	85
+	+	35	20
+	+	33	88
+	+	35	0
+	+	45	0
+	+	47	0
+	+	48	8
+	+	50	0
+	+	50	14
+	+	66	0
+	+	50	0
+	+	66	0
+	+	64	0
+	+	63	0
+	+	62	0
+	+	61	0
+	+	60	0
+	+	59	0
+	+	58	0
+	+	57	0
+	+	56	0
+	+	55	0
+	+	54	0
+	+	53	0
+	+	52	0
+	+	54	0
+	+	51	0
+	+	50	0
+
+> ~/projet/FPGA-Storm/rapport/sdsoc.tex
+	"	19	0
+	^	19	0
+	.	18	47
+	+	20	16
+	+	3	14
+	+	7	0
+	+	7	0
+	+	7	49
+	+	9	78
+	+	10	42
+	+	7	49
+	+	7	66
+	+	8	41
+	+	8	72
+	+	9	60
+	+	10	16
+	+	9	0
+	+	10	62
+	+	9	39
+	+	7	35
+	+	19	0
+	+	12	70
+	+	13	59
+	+	14	0
+	+	4	34
+	+	18	33
+	+	4	6
+	+	18	47
+
+> ~/TODO_RAPPORT.txt
+	"	1	0
+
+> ~/projet/FPGA-Storm/rapport/vivado_hls.
+	"	1	0
+
+> ~/Goals
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Infos
+	"	1	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/Téléchargements/Rapport.tex
+	"	12	0
+
+> ~/Téléchargements/projet(1).tex
+	"	1	0
+
+> ~/projet/SW_hls/sources/algo_modif.h
+	"	12	0
+
+> ~/projet/SW_hls/sources/algo_modif.c
+	"	67	0
+	^	36	37
+	.	68	0
+	+	1	19
+	+	58	0
+	+	61	0
+	+	38	1
+	+	39	1
+	+	41	0
+	+	35	31
+	+	45	0
+	+	48	0
+	+	31	62
+	+	35	28
+	+	36	38
+	+	37	0
+	+	35	36
+	+	36	36
+	+	68	0
