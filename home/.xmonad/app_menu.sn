@@ -1,0 +1,33 @@
+apps: [ 
+
+  ["bureautique" [
+    ["libre-office" "libreoffice"]
+    ["latex" "texmaker"]
+  ]]
+
+  ["dessin" [
+    ["krita" "krita"]
+  ]]
+
+  ["multimedia" [
+    ["firefox" "firefox"]
+    ["vlc" "vlc"]
+  ]]
+
+  ["dev" [
+    ["qtcreator" "qtcreator"]
+    ["urxvt" "urxvt +sb"]
+    ["vivado" "/home/neliell/Xilinx/SDSoC/2016.2/Vivado_HLS/2016.2/bin/vivado_hls"]
+    ["isabelle" "ISABELLE_GHC=ghc isabelle jedit"]
+  ]]
+
+  ["fichiers" "nautilus --browser --no-desktop"
+  ]
+
+  ( bad )
+  ["eteindre" "poweroff"]
+  ["redemarrer" "reboot"]
+
+  ( bad too )
+  ["deconnexion" "pkill xmonad"]
+]

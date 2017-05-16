@@ -1,0 +1,9 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 1.0
+total_run_times 0
+use_spacer none
+
+TEXT
+^fg(\#00aaaa)^i(/home/neliell/.dzen2icons/mem.xbm) ${mem}/${memmax} (${memperc}%) ^i(/home/neliell/.dzen2icons/tri.xbm)^fg() ^fg(\#33aaaa)^i(/home/neliell/.dzen2icons/bat_full_01.xbm) ${battery BAT1} ^i(/home/neliell/.dzen2icons/tri.xbm)^fg() ^fg(\#66aaaa)^i(/home/neliell/.dzen2icons/cpu.xbm) ${cpu}% ^i(/home/neliell/.dzen2icons/tri.xbm)^fg() ^fg(\#99aaaa)^ca(1,super_cal)${time %a %b %d %I:%M%P}^ca() ^i(/home/neliell/.dzen2icons/tri.xbm)^fg() ^fg(\#aa0000)^ca(1,poweroff)[S]^ca()^fg() ^fg(\#bb2222)^ca(1,reboot)[R]^ca()^fg()
